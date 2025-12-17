@@ -1,0 +1,10 @@
+[package]
+name = "bitcoin-min-ver"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.56.1"
+
+[dependencies]
+arbitrary = { version = "=1.0" }
+cc = { version = "=1.0.28" }
+bitcoin = { git = "https://github.com/yancyribbens/rust-bitcoin.git", rev = "92e8c122c5316f99df7ea4bd6be8b1b150c1e0cc", features = ["arbitrary"] }
